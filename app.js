@@ -15,14 +15,15 @@ function registerUser() {
         "SAMPLE",
         "USER-REL"
     );
-    alert(putReqStr);
+    //alert(putReqStr);
     jQuery.ajaxSetup({ async: false });
     var resultObj = executeCommandAtGivenBaseUrl(
         putReqStr,
         "http://api.login2explore.com:5577",
         "/api/iml"
     );
-    alert(JSON.stringify(resultObj));
+    //alert(JSON.stringify(resultObj));
+    alert("Registered Successfully.");
     jQuery.ajaxSetup({ async: true });
     resetForm();
 }
